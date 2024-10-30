@@ -14,9 +14,19 @@ This project aims to uncover market trends, identify investment opportunities, a
 
 ### Business Questions To Answer:
 
-1.	Average price and count of houses by bedroom count
-2.	Most and least expensive places to buy a house
-3.	Average prices by house size ranges
+#### 1.	Average price and count of houses by bedroom count?
+-	What is the average price for 1-bedroom, 2-bedroom, etc.?
+- How many listings exist for each?
+
+  
+#### 2.	Most and least expensive places to buy a house?
+- Identify cities/states with the highest and lowest average prices.
+
+
+#### 3.	Average prices by house size ranges?
+- Use ranges such as: 500-1000, 1000-1500, 1500-2000, 2000+ sq ft.
+
+<br><br>
 
 ## Approaches Used
 
@@ -79,6 +89,8 @@ FROM real_estate;
 - Grouping by size range also helps identify market patterns, such as whether larger homes command higher average prices or if specific size ranges are more common in certain states.
 
 
+<br><br>
+
 ## Answering Business Questions:
 
 The data is now ready to begin analysis and answer business questions.
@@ -117,7 +129,16 @@ ORDER BY bed;
 | 6 Bedroom House  | $970,654   | 13,456         |
 
 
-## ***To view the rest of questions, please click here:*** _________-
+## ***To view the rest of questions, please click here:*** [Answering Questions](https://github.com/waltervas10/USA-Real-Estate/blob/48c8190415c5795986fa731f0796d356cc891682/Answering%20Questions.md)
+
+<br><br>
+
+## Create a Dahsboard in Tableau:
+
+Once data is analyzed, I then imported all files into Tableau and started working on the visualizations.
+
+
+
 
 
 
