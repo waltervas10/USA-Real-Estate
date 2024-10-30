@@ -29,7 +29,7 @@ ORDER BY bed;
 | 5 Bedroom House  | $891,762   | 51,745         |
 | 6 Bedroom House  | $970,654   | 13,456         |
 
-#### Explanation: 
+#### Analysis: 
 
  This query provides insight into how the number of bedrooms affects house prices.
  
@@ -58,9 +58,86 @@ ORDER BY avg_price DESC;
 
 **ORDER BY avg_price DESC:** Orders the results in descending order based on the average price, so the highest average prices appear first.
 
+#### Least 10:                                                              
+
+| City       | State       | Average Price |
+|------------|-------------|---------------|
+| Gilead     | Nebraska    | $1,000.00     |
+| Caraway    | Arkansas    | $8,500.00     |
+| Wheatland  | Indiana     | $8,900.00     |
+| Iron Gate  | Virginia    | $10,000.00    |
+| Lanesboro  | Pennsylvania| $10,000.00    |
+| Melbeta    | Nebraska    | $12,000.00    |
+| Millfield  | Ohio        | $12,334.00    |
+| Lamont     | Iowa        | $12,500.00    |
+| McCracken  | Kansas      | $14,000.00    |
+| Midland    | Maryland    | $14,500.00    |   
+
+#### Top 10:
+
+| City            | State          | Average Price         |
+|-----------------|----------------|-----------------------|
+| International   | California     | $2,147,483,600.00     |
+| Avon            | Montana        | $24,750,000.00        |
+| Big Sandy       | Montana        | $17,450,000.00        |
+| Golden Beach    | Florida        | $15,108,333.33        |
+| Sagaponack      | New York       | $11,814,500.00        |
+| Olney           | Montana        | $11,500,000.00        |
+| Wise River      | Montana        | $11,300,000.00        |
+| Bellevue        | Texas          | $10,034,750.00        |
+| Kattskill Bay   | New York       | $10,000,000.00        |
+| Parmelee        | South Dakota   | $9,154,500.00         |
+
+
+### **To view and download the results, please click here:** [Question 2 Analysis Results](https://github.com/waltervas10/USA-Real-Estate/raw/refs/heads/main/Q2-Most%20and%20least%20expensive%20places%20to%20buy%20a%20house.csv)
+
+#### Analysis: 
+
+This query ranks cities and states based on their average house prices. 
+
+By identifying the most and least expensive locations, the results provide insights into regional housing market trends. 
+
+This information can guide buyers or investors toward affordable markets or highlight areas with premium property prices.
+
+The top 10 most expensive and least expensive places will be especially useful in comparative analysis.
+
+
+## 3) Average Prices Per State
+
+```sql
+SELECT  
+    state, 
+    AVG(CAST(price AS NUMERIC(18, 2))) AS avg_price
+FROM 
+    real_estate
+WHERE 
+    price IS NOT NULL
+GROUP BY 
+    state
+ORDER BY 
+    avg_price DESC;
+```
+#### Breakdown:
+
+
+**state:** Selects the state column to group results by state.
+
+**AVG(CAST(price AS NUMERIC(18, 2))) AS avg_price:** Calculates the average price per state, casting price as NUMERIC(18, 2) for precision with up to 18 total digits and 2 decimal places.
+
+**price IS NOT NULL:** Excludes rows where price is NULL, ensuring only valid prices are included in the calculation.
+
+**state:** Groups the results by state so each row represents a unique state.
+
+**avg_price DESC:** Sorts the results in descending order by avg_price, showing states with the highest average prices first.
+
+#### Analysis:
+
+This query explores how house prices vary within each state. 
+
+
+Analyzing these patterns helps uncover which states on average are the most expensive to move to.
 
 
 
-[Download the CSV file directly](https://github.com/waltervas10/USA-Real-Estate/raw/refs/heads/main/Q2-Most%20and%20least%20expensive%20places%20to%20buy%20a%20house.csv)
 
 
