@@ -22,8 +22,102 @@ This project aims to uncover market trends, identify investment opportunities, a
 
 ### 1) Clean Data in Excel
 
-Loading the Dataset:
+**Loading the Dataset:**
 
 Initially, the cleaning of the data was going to be performed using SQL, but the dataset had some values that didn't match. MySQL was not able to upload smoothly, so I then decided to check out the data in Excel.
 
-![rawdata.png](
+***To view the raw data, please click here:*** [rawdata](https://github.com/waltervas10/USA-Real-Estate/blob/5e2bacaa732396c38917e69837fd3be909972cb1/rawdata.png)
+
+- **Upon reviewing the dataset, I noticed:**                          
+  - Several entries appeared unusual or incorrect
+  - Listings with 99 or 473 bedrooms and bathrooms
+  - Records contained missing values
+  - NULL values
+  - Incorrect formats
+
+- **I then performed data cleaning.**
+  - I limited the dataset to houses with a maximum of 6 bedrooms and 6 bathrooms
+  - Removed any blank fields within these columns
+  - Corrected the formats
+  - Corrected the missing values
+
+ ### 2) Prepare Data for Analysis
+ > The clean data was then succesfully imported into MySql and was ready to begin preparation
+
+**Creating a new column:** price_per_sqft
+
+```sql
+ALTER TABLE real_estate 
+ADD price_per_sqft FLOAT;
+UPDATE real_estate 
+SET price_per_sqft = price / house_size;
+```
+
+
+
+ - The **price_per_sqft** metric enriches the dataset by providing a standardized way to compare the price of houses based on their living space.
+ - This allows for better analysis across properties of varying sizes, helping to identify trends such as whether smaller houses tend to have a higher price per square foot.
+ - This metric is particularly useful when evaluating the value-for-space ratio within different cities or states.
+
+<br>
+
+**Creating a new view:** categorizes house sizes into ranges
+
+```sql
+CREATE VIEW house_size_ranges AS
+SELECT *,
+  CASE
+    WHEN house_size BETWEEN 500 AND 1000 THEN '500-1000'
+    WHEN house_size BETWEEN 1001 AND 1500 THEN '1000-1500'
+    WHEN house_size BETWEEN 1501 AND 2000 THEN '1500-2000'
+    ELSE '2000+' 
+  END AS size_range
+FROM real_estate;  
+```
+- The size ranges were chosen to group houses into meaningful categories for easier analysis.
+- These ranges (500-1000 sq ft, 1000-1500 sq ft, etc.) reflect typical housing size brackets, allowing to investigate price differences across categories.
+- Grouping by size range also helps identify market patterns, such as whether larger homes command higher average prices or if specific size ranges are more common in certain states.
+
+
+## Answering Business Questions:
+
+The data is now ready to begin analysis and answer business questions.
+
+### 1)	Average price and count of houses by bedroom count:
+
+```sql
+SELECT bed, 
+       AVG(CAST(price AS BIGINT)) AS avg_price, 
+       COUNT(*) AS total_listings
+FROM real_estate
+GROUP BY bed
+ORDER BY bed;
+```
+### Breakdown:
+
+**AVG(CAST(price AS BIGINT)) AS avg_price:** This calculates the average price for each bedroom category, casting the price to BIGINT.
+
+**COUNT(*) AS total_listings:** This counts all listings for each bedroom count.
+
+**GROUP BY bed:** This groups the results based on the number of bedrooms.
+
+- This query provides insight into how the number of bedrooms affects house prices.
+- It also shows the distribution of listings across different bedroom counts.
+- The results help determine whether more bedrooms generally correlate with higher prices, offering valuable information for potential buyers or investors targeting specific property sizes.
+
+#### Results:
+
+| Bed              | Avg Price | Total Listings |
+|------------------|-----------|----------------|
+| 1 Bedroom House  | $383,875   | 30,562         |
+| 2 Bedroom House  | $392,296   | 127,039        |
+| 3 Bedroom House  | $416,828   | 301,579        |
+| 4 Bedroom House  | $613,303   | 177,553        |
+| 5 Bedroom House  | $891,762   | 51,745         |
+| 6 Bedroom House  | $970,654   | 13,456         |
+
+
+## ***To view the rest of questions, please click here:*** _________-
+
+
+
