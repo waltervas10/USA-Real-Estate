@@ -25,3 +25,5 @@ This project aims to uncover market trends, identify investment opportunities, a
 Loading the Dataset:
 
 Initially, the cleaning of the data was going to be performed using SQL, but the dataset had some values that didn't match. MySQL was not able to upload smoothly, so I then decided to check out the data in Excel.
+
+![rawdata.png](
