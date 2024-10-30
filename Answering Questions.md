@@ -61,6 +61,6 @@ ORDER BY avg_price DESC;
 
 
 
-
+[Download the CSV file directly](https://github.com/waltervas10/USA-Real-Estate/raw/refs/heads/main/Q2-Most%20and%20least%20expensive%20places%20to%20buy%20a%20house.csv)
 
 
