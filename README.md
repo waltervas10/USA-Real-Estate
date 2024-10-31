@@ -2,7 +2,7 @@
 
 ## About
 
-I chose a recent real estate dataset from Kaggle for this project because it presents a diverse array of information, perfect for resolving complex questions. The initial step involved cleaning the data in Excel to ensure its accuracy and consistency. I then used MySQL for in-depth analysis to resolve the questions. Finally, I created visualizations from my findings using Tableau, making the results not only accessible but also engaging. 
+I chose a real estate dataset from Kaggle for this project because it presents a diverse array of information, perfect for resolving complex questions. The initial step involved cleaning the data in Excel to ensure its accuracy and consistency. I then used MySQL for in-depth analysis to resolve the questions. Finally, I created visualizations from my findings using Tableau, making the results not only accessible but also engaging. 
 
 #### Dataset:
 https://www.kaggle.com/datasets/ahmedshahriarsakib/usa-real-estate-dataset/data
