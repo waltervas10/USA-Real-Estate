@@ -113,9 +113,13 @@ ORDER BY bed;
 
 **GROUP BY bed:** This groups the results based on the number of bedrooms.
 
-- This query provides insight into how the number of bedrooms affects house prices.
-- It also shows the distribution of listings across different bedroom counts.
-- The results help determine whether more bedrooms generally correlate with higher prices, offering valuable information for potential buyers or investors targeting specific property sizes.
+#### Analysis:
+
+This query provides insight into how the number of bedrooms affects house prices.
+
+It also shows the distribution of listings across different bedroom counts.
+
+The results help determine whether more bedrooms generally correlate with higher prices, offering valuable information for potential buyers or investors targeting specific property sizes.
 
 #### Results:
 
