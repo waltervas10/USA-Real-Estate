@@ -144,7 +144,12 @@ The results help determine whether more bedrooms generally correlate with higher
 ### **Question 1 Visualization:** Average price and count of houses by bedroom count
 
 ![Q2Visualization](https://github.com/waltervas10/USA-Real-Estate/blob/214dbaf2d69fb8e1a7c6d5f35ad6890259789bd1/Q1%20Visualization.png)
+-----------
 
+<br><br>
+
+
+### **Question 2 Visualization:** Most and least expensive places to buy a house
 
 
 
