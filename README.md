@@ -139,8 +139,11 @@ The results help determine whether more bedrooms generally correlate with higher
 
 ## Create a Dahsboard in Tableau:
 
-Once data is analyzed, I then imported all files into Tableau and started working on the visualizations.
+> Once data is analyzed, I then imported all files into Tableau and started working on the visualizations.
 
+**Question 1 Visualization:** Average price and count of houses by bedroom count
+
+![Q2Visualization](___)
 
 
 
