@@ -137,11 +137,11 @@ The results help determine whether more bedrooms generally correlate with higher
 
 <br><br>
 
-## Create a Dahsboard in Tableau:
+## Create a Dashboard in Tableau:
 
 > Once data is analyzed, I then imported all files into Tableau and started working on the visualizations.
 
-**Question 1 Visualization:** Average price and count of houses by bedroom count
+### **Question 1 Visualization:** Average price and count of houses by bedroom count
 
 ![Q2Visualization](https://github.com/waltervas10/USA-Real-Estate/blob/214dbaf2d69fb8e1a7c6d5f35ad6890259789bd1/Q1%20Visualization.png)
 
