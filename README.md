@@ -18,13 +18,13 @@ This project aims to uncover market trends, identify investment opportunities, a
 -	What is the average price for 1-bedroom, 2-bedroom, etc.?
 - How many listings exist for each?
 
+#### 2.	Average price by house size ranges?
+- Ranges such as: 500-1000, 1000-1500, 1500-2000, 2000+ sq ft.
+
   
-#### 2.	Most and least expensive places to buy a house?
+#### 3.	Most and least expensive places to buy a house?
 - Identify cities/states with the highest and lowest average prices.
 
-
-#### 3.	Average prices by house size ranges?
-- Use ranges such as: 500-1000, 1000-1500, 1500-2000, 2000+ sq ft.
 
 <br><br>
 
@@ -149,7 +149,7 @@ The results help determine whether more bedrooms generally correlate with higher
 <br><br>
 
 
-### **Question 2 Visualization:** Most and least expensive places to buy a house
+### **Question 2 Visualization:** Average price by house size ranges
 
 
 
