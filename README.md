@@ -145,3 +145,8 @@ The results help determine whether more bedrooms generally correlate with higher
 
 
 ![Q3 Visualization](https://github.com/waltervas10/USA-Real-Estate/blob/babea2e24d80eedb70b63b4770b21043996a3f96/Q3%20Visualization.png)
+
+
+
+
+### ***To view file, please click here: [Download Tableau File](https://waltervas10.github.io/USA-Real-Estate/Average%20House%20Prices%20Per%20State.twb)***
