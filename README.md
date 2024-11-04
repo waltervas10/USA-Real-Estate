@@ -112,7 +112,7 @@ The results help determine whether more bedrooms generally correlate with higher
 | 6 Bedroom House  | $970,654   | 13,456         |
 
 
-## ***To view the rest of questions, please click here:*** [Answering Questions](https://github.com/waltervas10/USA-Real-Estate/blob/48c8190415c5795986fa731f0796d356cc891682/Answering%20Questions.md)
+## ***To view the rest of questions, please click here:*** [Answering Questions](https://github.com/waltervas10/USA-Real-Estate/blob/21c3d11fa5be571a2286031850bd9b70c358b6f6/Questions.md)
 
 <br><br>
 
