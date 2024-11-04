@@ -1,15 +1,3 @@
-## Dashboard
-
-
-![Dashboard](
-
-
-
-### ***To view file, please click here:  [Download Tableau File](https://waltervas10.github.io/USA-Real-Estate/raw/refs/heads/main/Real%20Estate%20Dashboard.twb)***
-
-
-
-
 
 ## **Question 1 Visualization:** Average price and total listings by bedroom count
 
@@ -41,3 +29,14 @@
 
 
 ### ***To view file, please click here: [Download Tableau File](https://waltervas10.github.io/USA-Real-Estate/Average%20House%20Prices%20Per%20State.twb)***
+
+
+
+## Dashboard
+
+
+![Dashboard](https://github.com/waltervas10/USA-Real-Estate/blob/main/Dashboard.png)
+
+
+
+### ***To view file, please click here:  [Download Tableau File](https://waltervas10.github.io/USA-Real-Estate/raw/refs/heads/main/Real%20Estate%20Dashboard.twb)***
