@@ -151,7 +151,7 @@ The results help determine whether more bedrooms generally correlate with higher
 
 ### **Question 2 Visualization:** Average price by house size ranges
 
-![https://github.com/waltervas10/USA-Real-Estate/blob/974183fb2398c99f42d752ef7d2d30bd3fe0588d/Q2%20Visualization.png
+![Q2 Visualization](https://github.com/waltervas10/USA-Real-Estate/blob/974183fb2398c99f42d752ef7d2d30bd3fe0588d/Q2%20Visualization.png)
 
 
 
