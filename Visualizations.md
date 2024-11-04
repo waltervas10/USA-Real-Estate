@@ -40,3 +40,6 @@
 
 
 ### ***To view file, please click here:  [Download Tableau File](https://waltervas10.github.io/USA-Real-Estate/raw/refs/heads/main/Real%20Estate%20Dashboard.twb)***
+
+
+**Remember:** The data in this real estate dataset is not sourced from actual market records, which may lead to unrealistic results. This explains the inflated numbers for some states.
