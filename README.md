@@ -26,8 +26,9 @@ This project aims to uncover market trends, identify investment opportunities, a
 
   
 #### 3. Average price per state?
+- Which states have the most expensive housing?
 
-<br><br>
+<br>
 
 ## Approaches Used
 
@@ -115,11 +116,11 @@ The results help determine whether more bedrooms generally correlate with higher
 | 6 Bedroom House  | $970,654   | 13,456         |
 
 
-## ***To view the rest of questions, please click here:*** [Answering Questions](https://github.com/waltervas10/USA-Real-Estate/blob/21c3d11fa5be571a2286031850bd9b70c358b6f6/Questions.md)
+## ***To view the rest of questions, please click here: [Answering Questions](https://github.com/waltervas10/USA-Real-Estate/blob/21c3d11fa5be571a2286031850bd9b70c358b6f6/Questions.md)***
 
 <br><br>
 
-# Creating a Dashboard in Tableau:
+### Creating a Dashboard in Tableau:
 
 > Once data is analyzed, I then imported all files into Tableau and started working on the visualizations.
 
@@ -127,4 +128,4 @@ The results help determine whether more bedrooms generally correlate with higher
 ![Dashboard](https://github.com/waltervas10/USA-Real-Estate/blob/main/Dashboard.png)
 
 
-## **To explore the visualizations, please click here: [Visualizations](https://github.com/waltervas10/USA-Real-Estate/blob/main/Visualizations.md)**
+## ***To explore the visualizations, please click here: [Visualizations](https://github.com/waltervas10/USA-Real-Estate/blob/main/Visualizations.md)***
