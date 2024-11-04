@@ -22,9 +22,7 @@ This project aims to uncover market trends, identify investment opportunities, a
 - Ranges such as: 500-1000, 1000-1500, 1500-2000, 2000+ sq ft.
 
   
-#### 3.	Most and least expensive places to buy a house?
-- Identify cities/states with the highest and lowest average prices.
-
+#### 3. Identify states with the highest and lowest average prices.
 
 <br><br>
 
@@ -154,5 +152,9 @@ The results help determine whether more bedrooms generally correlate with higher
 ![Q2 Visualization](https://github.com/waltervas10/USA-Real-Estate/blob/974183fb2398c99f42d752ef7d2d30bd3fe0588d/Q2%20Visualization.png)
 
 
+<br><br>
+
+
+### **Question 3 Visualization:** Identify states with the highest and lowest average prices
 
 
