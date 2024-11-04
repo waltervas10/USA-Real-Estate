@@ -37,70 +37,34 @@ ORDER BY bed;
  
  The results help determine whether more bedrooms generally correlate with higher prices, offering valuable information for potential buyers or investors targeting specific property sizes.
 
-## 2)	Most and least expensive places to buy a house:
+## 2) Average price by house size ranges:
 
 ```sql
-SELECT city, state, AVG(CAST(price AS DECIMAL(18, 2))) AS avg_price
-FROM real_estate
-GROUP BY city, state
-ORDER BY avg_price DESC;
+CREATE VIEW house_size_ranges AS
+SELECT *,
+  CASE
+    WHEN house_size BETWEEN 500 AND 1000 THEN '500-1000'
+    WHEN house_size BETWEEN 1001 AND 1500 THEN '1000-1500'
+    WHEN house_size BETWEEN 1501 AND 2000 THEN '1500-2000'
+    ELSE '2000+' 
+  END AS size_range
 ```
 
 #### Breakdown:
+**CREATE VIEW house_size_ranges AS:** This command creates a view called ***house_size_ranges***.
 
-**SELECT city, state:** This selects the city and state columns from the real_estate table.
+The **CASE** statement assigns a **size_range** category to each row based on the value in the **house_size** column.
 
-**AVG(CAST(price AS DECIMAL(18, 2))) AS avg_price:** This calculates the average price for each group (city and state) and casts the price to DECIMAL(18, 2) for precise decimal handling. This ensures that the average price will have two decimal places.
+This results in a new column, ***size_range,*** in the view, showing the house size category for each row.
 
-**FROM real_estate:** Specifies the table from which to retrieve the data.
-
-**GROUP BY city, state:** Groups the results by both city and state, allowing to compute the average price for each unique combination.
-
-**ORDER BY avg_price DESC:** Orders the results in descending order based on the average price, so the highest average prices appear first.
-
-#### Least 10:                                                              
-
-| City       | State       | Average Price |
-|------------|-------------|---------------|
-| Gilead     | Nebraska    | $1,000.00     |
-| Caraway    | Arkansas    | $8,500.00     |
-| Wheatland  | Indiana     | $8,900.00     |
-| Iron Gate  | Virginia    | $10,000.00    |
-| Lanesboro  | Pennsylvania| $10,000.00    |
-| Melbeta    | Nebraska    | $12,000.00    |
-| Millfield  | Ohio        | $12,334.00    |
-| Lamont     | Iowa        | $12,500.00    |
-| McCracken  | Kansas      | $14,000.00    |
-| Midland    | Maryland    | $14,500.00    |   
-
-#### Top 10:
-
-| City            | State          | Average Price         |
-|-----------------|----------------|-----------------------|
-| International   | California     | $2,147,483,600.00     |
-| Avon            | Montana        | $24,750,000.00        |
-| Big Sandy       | Montana        | $17,450,000.00        |
-| Golden Beach    | Florida        | $15,108,333.33        |
-| Sagaponack      | New York       | $11,814,500.00        |
-| Olney           | Montana        | $11,500,000.00        |
-| Wise River      | Montana        | $11,300,000.00        |
-| Bellevue        | Texas          | $10,034,750.00        |
-| Kattskill Bay   | New York       | $10,000,000.00        |
-| Parmelee        | South Dakota   | $9,154,500.00         |
-
-
-### **To view and download the results, please click here:** [Question 2 Analysis Results](https://github.com/waltervas10/USA-Real-Estate/raw/refs/heads/main/Q2-Most%20and%20least%20expensive%20places%20to%20buy%20a%20house.csv)
 
 #### Analysis: 
 
-This query ranks cities and states based on their average house prices. 
+The size ranges were chosen to group houses into meaningful categories for easier analysis
 
-By identifying the most and least expensive locations, the results provide insights into regional housing market trends. 
+These ranges (500-1000 sq ft, 1000-1500 sq ft, etc.) reflect typical housing size brackets, allowing us to investigate price differences across categories. 
 
-This information can guide buyers or investors toward affordable markets or highlight areas with premium property prices.
-
-The top 10 most expensive and least expensive places will be especially useful in comparative analysis.
-
+Grouping by size range also helps identify market patterns, such as whether larger homes command higher average prices or if specific size ranges are more common in certain states.
 
 ## 3) Average Prices Per State
 
