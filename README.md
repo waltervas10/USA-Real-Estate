@@ -142,3 +142,4 @@ The results help determine whether more bedrooms generally correlate with higher
 ### **Question 3 Visualization:** Average price per state
 
 
+![Q3 Visualization](https://github.com/waltervas10/USA-Real-Estate/blob/babea2e24d80eedb70b63b4770b21043996a3f96/Q3%20Visualization.png)
