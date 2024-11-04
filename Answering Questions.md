@@ -1,6 +1,6 @@
 # Answering Business Questions:
 
-## 1)	Average price and count of houses by bedroom count:
+## 1)	Average price and total listings by bedroom count:
 
 ```sql
 SELECT bed, 
