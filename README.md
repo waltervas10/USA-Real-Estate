@@ -67,25 +67,6 @@ SET price_per_sqft = price / house_size;
  - This allows for better analysis across properties of varying sizes, helping to identify trends such as whether smaller houses tend to have a higher price per square foot.
  - This metric is particularly useful when evaluating the value-for-space ratio within different cities or states.
 
-<br>
-
-**Creating a new view:** categorizes house sizes into ranges
-
-```sql
-CREATE VIEW house_size_ranges AS
-SELECT *,
-  CASE
-    WHEN house_size BETWEEN 500 AND 1000 THEN '500-1000'
-    WHEN house_size BETWEEN 1001 AND 1500 THEN '1000-1500'
-    WHEN house_size BETWEEN 1501 AND 2000 THEN '1500-2000'
-    ELSE '2000+' 
-  END AS size_range
-FROM real_estate;  
-```
-- The size ranges were chosen to group houses into meaningful categories for easier analysis.
-- These ranges (500-1000 sq ft, 1000-1500 sq ft, etc.) reflect typical housing size brackets, allowing to investigate price differences across categories.
-- Grouping by size range also helps identify market patterns, such as whether larger homes command higher average prices or if specific size ranges are more common in certain states.
-
 
 <br><br>
 
