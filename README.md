@@ -124,8 +124,8 @@ The results help determine whether more bedrooms generally correlate with higher
 
 > Once data is analyzed, I then imported all files into Tableau and started working on the visualizations.
 
-
 ![Dashboard](https://github.com/waltervas10/USA-Real-Estate/blob/main/Dashboard.png)
+
 
 
 ## ***To explore the visualizations, please click here: [Visualizations](https://github.com/waltervas10/USA-Real-Estate/blob/main/Visualizations.md)***
