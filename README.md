@@ -22,7 +22,7 @@ This project aims to uncover market trends, identify investment opportunities, a
 - Ranges such as: 500-1000, 1000-1500, 1500-2000, 2000+ sq ft.
 
   
-#### 3. Identify states with the highest and lowest average prices.
+#### 3. Average price per state?
 
 <br><br>
 
@@ -155,6 +155,6 @@ The results help determine whether more bedrooms generally correlate with higher
 <br><br>
 
 
-### **Question 3 Visualization:** Identify states with the highest and lowest average prices
+### **Question 3 Visualization:** Average price per state
 
 
